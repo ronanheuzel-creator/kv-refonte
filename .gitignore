@@ -1,0 +1,25 @@
+# Secrets — JAMAIS commit
+.env
+.env.local
+.env.*.local
+
+# Dépendances
+node_modules/
+
+# Données runtime (régénérables, locales par machine)
+backups/
+screenshots/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*~

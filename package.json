@@ -1,0 +1,15 @@
+{
+  "name": "kv-refonte",
+  "version": "0.1.0",
+  "description": "Scripts d'automatisation pour la refonte du site kotonavision.com via l'API WordPress / Elementor",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "list": "node scripts/list-kv-library.js"
+  },
+  "author": "Ronan Heuzel",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
