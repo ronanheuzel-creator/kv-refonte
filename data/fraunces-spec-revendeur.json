@@ -1,0 +1,14 @@
+{
+  "slug": "revendeur-solidworks-canada",
+  "_comment": "Mots-clés Fraunces pour revendeur. Mix de cas : <span>/<i>/<em> existants à normaliser + wraps nus. Questions fréquentes skip.",
+  "fixes": [
+    { "match": "Acheter SolidWorks Design n'a jamais été aussi", "keyword": "simple" },
+    { "match": "Les prix SolidWorks au Canada", "keyword": "prix" },
+    { "match": "Les différentes versions de SolidWorks", "keyword": "différentes" },
+    { "match": "La tranquilité pour 75$ par mois", "keyword": "tranquilité" },
+    { "match": "Une solution prévue pour votre", "keyword": "croissance" },
+    { "match": "Une approche différente, pensée pour les PME industrielles", "keyword": "différente" },
+    { "match": "Déjà sous licence SOLIDWORKS", "keyword": "supérieure" },
+    { "match": "Parlons de", "keyword": "votre projet" }
+  ]
+}

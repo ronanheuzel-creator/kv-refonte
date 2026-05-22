@@ -83,15 +83,36 @@ for (const fix of spec.fixes) {
     continue;
   }
 
-  // Vérifier que keyword est bien dans oldTitle
-  if (!oldTitle.includes(fix.keyword)) {
-    console.log(`  ❌ "${fix.match}" : mot-clé "${fix.keyword}" non trouvé dans le title`);
-    skipped++;
-    continue;
+  // Si keyword est déjà enveloppé dans <em>/<span>/<i> (avec n'importe quel style)
+  // → on REMPLACE le wrapper par <em style="Fraunces">keyword</em> (normalisation).
+  // Sinon → on WRAP le keyword nu.
+  function escapeRegex(s) {
+    return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   }
-
-  // Remplacer la 1ère occurrence du keyword par <em style="Fraunces">keyword</em>
-  const newTitle = oldTitle.replace(fix.keyword, `<em style="${FRAUNCES_STYLE}">${fix.keyword}</em>`);
+  const escapedKw = escapeRegex(fix.keyword);
+  const existingTagRegex = new RegExp(
+    `<(em|span|i)(?:\\s+[^>]*)?>\\s*${escapedKw}\\s*<\\/\\1>`,
+    'i'
+  );
+  let newTitle;
+  if (existingTagRegex.test(oldTitle)) {
+    // Normalisation : remplace <em|span|i ...>keyword</em|span|i> par <em style="Fraunces">keyword</em>
+    newTitle = oldTitle.replace(
+      existingTagRegex,
+      `<em style="${FRAUNCES_STYLE}">${fix.keyword}</em>`
+    );
+  } else {
+    // Wrap le mot nu
+    if (!oldTitle.includes(fix.keyword)) {
+      console.log(`  ❌ "${fix.match}" : mot-clé "${fix.keyword}" non trouvé dans le title`);
+      skipped++;
+      continue;
+    }
+    newTitle = oldTitle.replace(
+      fix.keyword,
+      `<em style="${FRAUNCES_STYLE}">${fix.keyword}</em>`
+    );
+  }
 
   console.log(`  [${(target.settings?.header_size || 'h2')}] keyword=\"${fix.keyword}\"`);
   console.log(`     AVANT : ${oldTitle}`);
