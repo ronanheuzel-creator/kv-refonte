@@ -1,0 +1,12 @@
+{
+  "slug": "accueil",
+  "_comment": "Mots-clés Fraunces pour les H2 de la homepage. H1 traité séparément par apply-fraunces.js.",
+  "fixes": [
+    { "match": "Nos offres", "keyword": "offres" },
+    { "match": "Ils nous font confiance", "keyword": "confiance" },
+    { "match": "Une offre qui s'adapte à vous.", "keyword": "adapte" },
+    { "match": "Une approche différente, pensée pour les PME industrielles", "keyword": "différente" },
+    { "match": "La tranquilité pour 75$ par mois", "keyword": "tranquilité" },
+    { "match": "Parlons de votre projet SOLIDWORKS.", "keyword": "SOLIDWORKS" }
+  ]
+}
