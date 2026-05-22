@@ -7,10 +7,11 @@
 //   node scripts/audit-pages.js --slugs=manufacturing,microsoft-365 --lang=en
 //
 // Sortie:
-//   - Console: une ligne par page (slug, sections, widgets)
+//   - Console: une ligne par page (slug, sections, widgets, KV refs)
 //   - Fichier: backups/audit-<lang|all>-<date>.md (rapport détaillé)
 
 import { wp } from '../lib/wp.js';
+import { listElementorLibrary } from '../lib/templates.js';
 import { parseElementorData, walk } from '../lib/elementor.js';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
@@ -24,29 +25,83 @@ const args = Object.fromEntries(
 const lang = args.lang;
 const slugs = args.slugs ? args.slugs.split(',').map((s) => s.trim()) : null;
 
+// 0. Récupère la bibliothèque KV pour détecter les références
+function decodeEntities(s) {
+  return String(s || '')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#?\w+;/g, '');
+}
+
+const allTemplates = await listElementorLibrary();
+const kvTemplates = allTemplates.filter((t) => {
+  const title = decodeEntities(t.title?.rendered || '');
+  return /^KV\s/i.test(title);
+});
+const KV_IDS = new Map(
+  kvTemplates.map((t) => [
+    t.id,
+    decodeEntities(t.title?.rendered || '').replace(/^KV\s*[^A-Za-z0-9]+\s*/i, '').trim(),
+  ])
+);
+console.log(`📚 ${KV_IDS.size} template(s) KV connu(s) dans la bibliothèque:`);
+for (const [id, name] of KV_IDS) console.log(`   #${id}  ${name}`);
+console.log('');
+
 // 1. Liste des pages cibles
 const query = { per_page: 100, status: 'publish', _fields: 'id,slug,title,link' };
 if (lang) query.lang = lang;
 let pages = await wp('/wp/v2/pages', { query });
 if (slugs) pages = pages.filter((p) => slugs.includes(p.slug));
 
-console.log(`\n🔍 Audit de ${pages.length} page(s)${lang ? ` (lang=${lang})` : ''} :\n`);
-console.log('  ID    | Slug                                | Sec | Cont | Wid | Top widgets');
-console.log('  ' + '-'.repeat(110));
+console.log(`🔍 Audit de ${pages.length} page(s)${lang ? ` (lang=${lang})` : ''} :\n`);
+console.log('  ID    | Slug                                | Sec | Cont | Wid | KV refs    | Top widgets');
+console.log('  ' + '-'.repeat(125));
+
+// Détection des références KV dans une page.
+function findKVRefsInTree(tree) {
+  const refs = []; // [{id, name, sectionIndex, widgetType, settingKey?}]
+  function walkRec(node, sectionIndex) {
+    if (!node) return;
+    const s = node.settings || {};
+    // Top-level / settings : templateID, template_id, template
+    for (const key of ['templateID', 'template_id', 'template']) {
+      const v = node[key] ?? s[key];
+      const num = Number(v);
+      if (!Number.isNaN(num) && KV_IDS.has(num)) {
+        refs.push({ id: num, name: KV_IDS.get(num), sectionIndex, widgetType: node.widgetType, settingKey: key });
+      }
+    }
+    // Scan settings for any numeric value matching a KV ID
+    for (const [k, v] of Object.entries(s)) {
+      if (['templateID', 'template_id', 'template'].includes(k)) continue;
+      const num = Number(v);
+      if (!Number.isNaN(num) && KV_IDS.has(num)) {
+        refs.push({ id: num, name: KV_IDS.get(num), sectionIndex, widgetType: node.widgetType, settingKey: k });
+      }
+    }
+    for (const child of node.elements || []) walkRec(child, sectionIndex);
+  }
+  tree.forEach((sec, i) => walkRec(sec, i));
+  return refs;
+}
 
 const reports = [];
 
 function firstHint(node) {
   const s = node.settings || {};
   const direct = s._title || s.title || s.heading_title;
-  if (direct) return String(direct).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  if (direct) return decodeEntities(String(direct).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim());
   if (node.widgetType === 'heading' && s.title) {
-    return String(s.title).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    return decodeEntities(String(s.title).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim());
   }
   if (node.widgetType === 'text-editor' && s.editor) {
-    return String(s.editor).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 80);
+    return decodeEntities(String(s.editor).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 80));
   }
-  if (node.widgetType === 'button' && s.text) return `[btn] ${s.text}`;
+  if (node.widgetType === 'button' && s.text) return `[btn] ${decodeEntities(s.text)}`;
   for (const child of node.elements || []) {
     const found = firstHint(child);
     if (found) return found;
@@ -82,22 +137,27 @@ for (const p of pages) {
       .map(([t, n]) => `${n}×${t}`)
       .join(', ');
 
+    const kvRefs = findKVRefsInTree(tree);
+    const kvSummary = kvRefs.length ? `${kvRefs.length}×KV` : '          ';
+
     console.log(
-      `${String(tree.length).padStart(3)} | ${String(counts.container).padStart(4)} | ${String(counts.widget).padStart(3)} | ${top3}`
+      `${String(tree.length).padStart(3)} | ${String(counts.container).padStart(4)} | ${String(counts.widget).padStart(3)} | ${kvSummary.padEnd(10)} | ${top3}`
     );
 
     reports.push({
       id: p.id,
       slug: p.slug,
-      title: p.title?.rendered || '',
+      title: decodeEntities(p.title?.rendered || ''),
       link: p.link,
       sections: tree.length,
       containers: counts.container,
       widgets: counts.widget,
       widgetTypes,
-      sectionHints: tree.map((s) => ({
+      kvRefs,
+      sectionHints: tree.map((s, i) => ({
         widgets: countWidgets(s),
         hint: firstHint(s) || '(vide)',
+        kvRefs: kvRefs.filter((r) => r.sectionIndex === i),
       })),
     });
   } catch (e) {
@@ -114,13 +174,15 @@ const reportPath = join(BACKUPS_DIR, `audit-${lang || 'all'}-${date}.md`);
 
 let md = `# Audit pages — ${lang || 'toutes langues'} — ${new Date().toISOString().slice(0, 10)}\n\n`;
 md += `**Source :** \`${process.env.WP_BASE_URL}\`\n`;
-md += `**Pages auditées :** ${reports.length}\n\n`;
+md += `**Pages auditées :** ${reports.length}\n`;
+md += `**Templates KV connus :** ${KV_IDS.size} (${[...KV_IDS.values()].join(', ')})\n\n`;
+
 md += `## Vue d'ensemble\n\n`;
-md += `| ID | Slug | Sections | Containers | Widgets | Top widgets |\n`;
-md += `|---:|------|---------:|-----------:|--------:|-------------|\n`;
+md += `| ID | Slug | Sections | Containers | Widgets | KV refs | Top widgets |\n`;
+md += `|---:|------|---------:|-----------:|--------:|--------:|-------------|\n`;
 for (const r of reports) {
   if (r.error) {
-    md += `| ${r.id} | ${r.slug} | — | — | — | ❌ ${r.error.slice(0, 50)} |\n`;
+    md += `| ${r.id} | ${r.slug} | — | — | — | — | ❌ ${r.error.slice(0, 50)} |\n`;
     continue;
   }
   const top3 = Object.entries(r.widgetTypes)
@@ -128,7 +190,8 @@ for (const r of reports) {
     .slice(0, 3)
     .map(([t, n]) => `${n}×\`${t}\``)
     .join(', ');
-  md += `| ${r.id} | \`${r.slug}\` | ${r.sections} | ${r.containers} | ${r.widgets} | ${top3} |\n`;
+  const kvN = (r.kvRefs || []).length;
+  md += `| ${r.id} | \`${r.slug}\` | ${r.sections} | ${r.containers} | ${r.widgets} | ${kvN || '—'} | ${top3} |\n`;
 }
 
 md += `\n## Détail par page\n\n`;
@@ -137,10 +200,19 @@ for (const r of reports) {
   md += `### ${r.title} (\`/${r.slug}/\`)\n\n`;
   md += `- **ID :** ${r.id}\n`;
   md += `- **URL :** ${r.link}\n`;
-  md += `- **Stats :** ${r.sections} sections racines · ${r.containers} containers · ${r.widgets} widgets\n\n`;
-  md += `**Sections racines :**\n\n`;
+  md += `- **Stats :** ${r.sections} sections racines · ${r.containers} containers · ${r.widgets} widgets\n`;
+  if (r.kvRefs && r.kvRefs.length) {
+    md += `- **🎯 Templates KV référencés (${r.kvRefs.length}) :**\n`;
+    for (const ref of r.kvRefs) {
+      md += `  - Section ${ref.sectionIndex + 1} → **${ref.name}** (#${ref.id})${ref.settingKey ? ` via setting \`${ref.settingKey}\`` : ''}${ref.widgetType ? ` [${ref.widgetType}]` : ''}\n`;
+    }
+  } else {
+    md += `- **Templates KV :** aucun (page non refondue par référence)\n`;
+  }
+  md += `\n**Sections racines :**\n\n`;
   r.sectionHints.forEach((s, i) => {
-    md += `${i + 1}. \`(${s.widgets}w)\` ${s.hint}\n`;
+    const kvNote = s.kvRefs?.length ? ` 🎯 ${s.kvRefs.map((k) => k.name).join(' + ')}` : '';
+    md += `${i + 1}. \`(${s.widgets}w)\` ${s.hint}${kvNote}\n`;
   });
   md += `\n**Widgets utilisés :**\n\n`;
   const sorted = Object.entries(r.widgetTypes).sort(([, a], [, b]) => b - a);
