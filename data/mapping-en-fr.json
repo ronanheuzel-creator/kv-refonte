@@ -1,0 +1,275 @@
+[
+  {
+    "en": {
+      "id": 1255,
+      "slug": "kotona-vision",
+      "title": "SolidWorks reseller Canada",
+      "link": "https://stagging.kotonavision.com/en/"
+    },
+    "fr": {
+      "id": 2,
+      "slug": "accueil",
+      "url": "https://stagging.kotonavision.com/"
+    }
+  },
+  {
+    "en": {
+      "id": 1654,
+      "slug": "blog",
+      "title": "Blog",
+      "link": "https://stagging.kotonavision.com/en/blog/"
+    },
+    "fr": {
+      "id": 1531,
+      "slug": "blogue",
+      "url": "https://stagging.kotonavision.com/blogue/"
+    }
+  },
+  {
+    "en": {
+      "id": 1291,
+      "slug": "solidworks-upgrade-3dex-offer",
+      "title": "SOLIDWORKS Upgrade &amp; 3DEX Offer",
+      "link": "https://stagging.kotonavision.com/en/solidworks-upgrade-3dex-offer/"
+    },
+    "fr": {
+      "id": 976,
+      "slug": "mise-a-jour-solidworks",
+      "url": "https://stagging.kotonavision.com/mise-a-jour-solidworks/"
+    }
+  },
+  {
+    "en": {
+      "id": 1295,
+      "slug": "manufacturing",
+      "title": "Manufacturing",
+      "link": "https://stagging.kotonavision.com/en/manufacturing/"
+    },
+    "fr": {
+      "id": 776,
+      "slug": "manufacturier",
+      "url": "https://stagging.kotonavision.com/manufacturier/"
+    }
+  },
+  {
+    "en": {
+      "id": 1175,
+      "slug": "professional-services",
+      "title": "Professional Services",
+      "link": "https://stagging.kotonavision.com/en/professional-services/"
+    },
+    "fr": {
+      "id": 774,
+      "slug": "services-professionnels",
+      "url": "https://stagging.kotonavision.com/services-professionnels/"
+    }
+  },
+  {
+    "en": {
+      "id": 1334,
+      "slug": "free-solidworks-startups-canada",
+      "title": "Free SolidWorks for canadian startups",
+      "link": "https://stagging.kotonavision.com/en/free-solidworks-startups-canada/"
+    },
+    "fr": {
+      "id": 772,
+      "slug": "solidworks-gratuit-startup-canada",
+      "url": "https://stagging.kotonavision.com/solidworks-gratuit-startup-canada/"
+    }
+  },
+  {
+    "en": {
+      "id": 1292,
+      "slug": "solidworks-reseller",
+      "title": "Who are we as a SolidWorks reseller ?",
+      "link": "https://stagging.kotonavision.com/en/solidworks-reseller/"
+    },
+    "fr": {
+      "id": 695,
+      "slug": "expert-solidworks-canada",
+      "url": "https://stagging.kotonavision.com/expert-solidworks-canada/"
+    }
+  },
+  {
+    "en": {
+      "id": 1211,
+      "slug": "microsoft-azure",
+      "title": "Microsoft Azure",
+      "link": "https://stagging.kotonavision.com/en/microsoft-azure/"
+    },
+    "fr": {
+      "id": 443,
+      "slug": "microsoft-azur",
+      "url": "https://stagging.kotonavision.com/microsoft-azur/"
+    }
+  },
+  {
+    "en": {
+      "id": 1172,
+      "slug": "custom-services-microsoft",
+      "title": "Custom Services &#8211; Microsoft",
+      "link": "https://stagging.kotonavision.com/en/custom-services-microsoft/"
+    },
+    "fr": {
+      "id": 65,
+      "slug": "services-microsoft-prestation-sur-mesure",
+      "url": "https://stagging.kotonavision.com/services-microsoft-prestation-sur-mesure/"
+    }
+  },
+  {
+    "en": {
+      "id": 1203,
+      "slug": "becloud-package",
+      "title": "Becloud Package",
+      "link": "https://stagging.kotonavision.com/en/becloud-package/"
+    },
+    "fr": {
+      "id": 63,
+      "slug": "pack-becloud",
+      "url": "https://stagging.kotonavision.com/pack-becloud/"
+    }
+  },
+  {
+    "en": {
+      "id": 1299,
+      "slug": "custom-service-solidworks",
+      "title": "Custom service – SolidWorks",
+      "link": "https://stagging.kotonavision.com/en/custom-service-solidworks/"
+    },
+    "fr": {
+      "id": 61,
+      "slug": "services-solidworks-prestation-sur-mesure",
+      "url": "https://stagging.kotonavision.com/services-solidworks-prestation-sur-mesure/"
+    }
+  },
+  {
+    "en": {
+      "id": 1319,
+      "slug": "solidworks-training",
+      "title": "SOLIDWORKS Training",
+      "link": "https://stagging.kotonavision.com/en/solidworks-training/"
+    },
+    "fr": {
+      "id": 59,
+      "slug": "formation-solidworks",
+      "url": "https://stagging.kotonavision.com/formation-solidworks/"
+    }
+  },
+  {
+    "en": {
+      "id": 1227,
+      "slug": "3dexperience-support",
+      "title": "3DExperience support",
+      "link": "https://stagging.kotonavision.com/en/3dexperience-support/"
+    },
+    "fr": {
+      "id": 57,
+      "slug": "support-3dexperience",
+      "url": "https://stagging.kotonavision.com/support-3dexperience/"
+    }
+  },
+  {
+    "en": {
+      "id": 1195,
+      "slug": "contact-us",
+      "title": "Contact us",
+      "link": "https://stagging.kotonavision.com/en/contact-us/"
+    },
+    "fr": {
+      "id": 43,
+      "slug": "nous-contacter",
+      "url": "https://stagging.kotonavision.com/nous-contacter/"
+    }
+  },
+  {
+    "en": {
+      "id": 1216,
+      "slug": "microsoft-copilot",
+      "title": "Microsoft Copilot",
+      "link": "https://stagging.kotonavision.com/en/microsoft-copilot/"
+    },
+    "fr": {
+      "id": 41,
+      "slug": "microsoft-copilote",
+      "url": "https://stagging.kotonavision.com/microsoft-copilote/"
+    }
+  },
+  {
+    "en": {
+      "id": 1196,
+      "slug": "power-platform",
+      "title": "Power Platform",
+      "link": "https://stagging.kotonavision.com/en/power-platform/"
+    },
+    "fr": {
+      "id": 39,
+      "slug": "power-plateforme",
+      "url": "https://stagging.kotonavision.com/power-plateforme/"
+    }
+  },
+  {
+    "en": {
+      "id": 1185,
+      "slug": "microsoft-365",
+      "title": "Microsoft 365",
+      "link": "https://stagging.kotonavision.com/en/microsoft-365/"
+    },
+    "fr": {
+      "id": 37,
+      "slug": "microsoft-365",
+      "url": "https://stagging.kotonavision.com/microsoft-365/"
+    }
+  },
+  {
+    "en": {
+      "id": 1237,
+      "slug": "simulation",
+      "title": "Simulation",
+      "link": "https://stagging.kotonavision.com/en/simulation/"
+    },
+    "fr": {
+      "id": 30,
+      "slug": "solidworks-simulation",
+      "url": "https://stagging.kotonavision.com/solidworks-simulation/"
+    }
+  },
+  {
+    "en": {
+      "id": 1283,
+      "slug": "3dexperience-pdm-plm",
+      "title": "3DEXPERIENCE PDM/PLM",
+      "link": "https://stagging.kotonavision.com/en/3dexperience-pdm-plm/"
+    },
+    "fr": {
+      "id": 28,
+      "slug": "3dexperience-pdm-cloud",
+      "url": "https://stagging.kotonavision.com/3dexperience-pdm-cloud/"
+    }
+  },
+  {
+    "en": {
+      "id": 1307,
+      "slug": "solidworks-price-canada",
+      "title": "Buy SolidWorks | SolidWorks Price Canada",
+      "link": "https://stagging.kotonavision.com/en/solidworks-price-canada/"
+    },
+    "fr": {
+      "id": 26,
+      "slug": "revendeur-solidworks-canada",
+      "url": "https://stagging.kotonavision.com/revendeur-solidworks-canada/"
+    }
+  },
+  {
+    "en": {
+      "id": 1236,
+      "slug": "privacy-policy",
+      "title": "Privacy Policy",
+      "link": "https://stagging.kotonavision.com/en/privacy-policy/"
+    },
+    "fr": {
+      "id": 3,
+      "slug": "confidentialite",
+      "url": "https://stagging.kotonavision.com/confidentialite/"
+    }
+  }
+]
