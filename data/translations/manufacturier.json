@@ -1,0 +1,458 @@
+{
+  "fr_slug": "manufacturier",
+  "fr_page_id": 776,
+  "fr_title": "Manufacturier",
+  "fr_link": "https://stagging.kotonavision.com/manufacturier/",
+  "extracted_at": "2026-05-24T17:28:46.736Z",
+  "_translation_notes": "Traduit par Claude. HTML/Fraunces/symboles préservés. Microsoft 365 section conservée (à demander au client si elle doit être supprimée puisque les autres pages Microsoft sont droppées).",
+  "strings": [
+    {
+      "widget_id": "d9foc4n3",
+      "type": "html",
+      "field": "html",
+      "fr": "<div class=\"kv-eyebrow\"><span class=\"kv-eyebrow-bar\"></span>INDUSTRIE · MANUFACTURIER</div>",
+      "en": "<div class=\"kv-eyebrow\"><span class=\"kv-eyebrow-bar\"></span>INDUSTRY · MANUFACTURING</div>"
+    },
+    {
+      "widget_id": "6356eisy",
+      "type": "heading",
+      "field": "title",
+      "fr": "Optimiser votre <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">efficacité</em> manufacturière.",
+      "en": "Optimize your manufacturing <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">efficiency</em>."
+    },
+    {
+      "widget_id": "2jpycnr7",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Au cœur d'un site de production performant se trouvent une planification rigoureuse, une traçabilité fiable et une collaboration fluide entre l'ingénierie et l'atelier. Nous vous aidons à mettre en place les outils pour y parvenir.</p>",
+      "en": "<p>At the heart of a high-performing production site lie rigorous planning, reliable traceability, and seamless collaboration between engineering and the workshop. We help you put the right tools in place to achieve this.</p>"
+    },
+    {
+      "widget_id": "n5duwltm",
+      "type": "html",
+      "field": "html",
+      "fr": "<span class=\"kv-badge\">◆ Solutions PDM, CAO & Collaboration</span>",
+      "en": "<span class=\"kv-badge\">◆ PDM, CAD & Collaboration Solutions</span>"
+    },
+    {
+      "widget_id": "nbpklmgr",
+      "type": "button",
+      "field": "text",
+      "fr": "Voir nos solutions",
+      "en": "View our solutions"
+    },
+    {
+      "widget_id": "igmpb0og",
+      "type": "button",
+      "field": "text",
+      "fr": "Nous contacter",
+      "en": "Contact us"
+    },
+    {
+      "widget_id": "3zl7g9xp",
+      "type": "heading",
+      "field": "title",
+      "fr": "Vos défis <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">quotidiens</em>",
+      "en": "Your daily <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">challenges</em>"
+    },
+    {
+      "widget_id": "h89yu87y",
+      "type": "heading",
+      "field": "title",
+      "fr": "Manque de traçabilité",
+      "en": "Lack of traceability"
+    },
+    {
+      "widget_id": "k6qn4vkc",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Des données dispersées entre les machines, les feuilles Excel et les courriels nuisent à la traçabilité des pièces et commandes.</p>",
+      "en": "<p>Data scattered across machines, Excel spreadsheets, and emails undermines the traceability of parts and orders.</p>"
+    },
+    {
+      "widget_id": "ygnleuwz",
+      "type": "heading",
+      "field": "title",
+      "fr": "Problèmes de version",
+      "en": "Versioning issues"
+    },
+    {
+      "widget_id": "ayuzu804",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Des fichiers CAO en double ou mal nommés engendrent des erreurs en production, des retouches coûteuses et des retards.</p>",
+      "en": "<p>Duplicated or poorly named CAD files lead to production errors, costly rework, and delays.</p>"
+    },
+    {
+      "widget_id": "y3whz48o",
+      "type": "heading",
+      "field": "title",
+      "fr": "Bureau ↔ atelier désynchronisé",
+      "en": "Office ↔ workshop disconnect"
+    },
+    {
+      "widget_id": "chpw2lkv",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Des allers-retours manuels ou l'absence de PDM freinent la mise en production rapide et sécurisée.</p>",
+      "en": "<p>Manual back-and-forth or the absence of PDM slows down fast and secure production launches.</p>"
+    },
+    {
+      "widget_id": "hu5akl1r",
+      "type": "heading",
+      "field": "title",
+      "fr": "Documents techniques perdus",
+      "en": "Lost technical documents"
+    },
+    {
+      "widget_id": "2onrvfvk",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Plans, fiches techniques et instructions sont stockés localement, rendant leur accès difficile et leur mise à jour aléatoire.</p>",
+      "en": "<p>Drawings, datasheets, and instructions stored locally are hard to access and unreliable to update.</p>"
+    },
+    {
+      "widget_id": "xc26tsc7",
+      "type": "heading",
+      "field": "title",
+      "fr": "Suivi de projet difficile",
+      "en": "Difficult project tracking"
+    },
+    {
+      "widget_id": "fc2g7hv9",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Sans outil structurant, les échéances, les statuts et les versions deviennent rapidement opaques pour toute l'équipe.</p>",
+      "en": "<p>Without a structuring tool, deadlines, statuses, and versions quickly become opaque to the whole team.</p>"
+    },
+    {
+      "widget_id": "0e2ys7v8",
+      "type": "heading",
+      "field": "title",
+      "fr": "Sécurité des données",
+      "en": "Data security"
+    },
+    {
+      "widget_id": "2ayp68rn",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Sauvegardes incomplètes, accès non contrôlés : vos données techniques critiques sont exposées sans cadre clair.</p>",
+      "en": "<p>Incomplete backups, uncontrolled access: your critical technical data is exposed without a clear framework.</p>"
+    },
+    {
+      "widget_id": "lii9fxti",
+      "type": "heading",
+      "field": "title",
+      "fr": "BÉNÉFICES",
+      "en": "BENEFITS"
+    },
+    {
+      "widget_id": "eq0ibewj",
+      "type": "heading",
+      "field": "title",
+      "fr": "Ce que vous gagnez <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">concrètement</em>",
+      "en": "What you gain <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">concretely</em>"
+    },
+    {
+      "widget_id": "a2thvxlf",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Une approche structurée pour reprendre le contrôle sur vos données techniques et fluidifier votre production.</p>",
+      "en": "<p>A structured approach to regain control over your technical data and streamline your production.</p>"
+    },
+    {
+      "widget_id": "eztgfhnc",
+      "type": "heading",
+      "field": "title",
+      "fr": "◆",
+      "en": "◆"
+    },
+    {
+      "widget_id": "xta9esh0",
+      "type": "heading",
+      "field": "title",
+      "fr": "Centralisation",
+      "en": "Centralization"
+    },
+    {
+      "widget_id": "grovtgqv",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Toutes vos données techniques accessibles depuis un point unique, avec versioning et historique complet.</p>",
+      "en": "<p>All your technical data accessible from a single point, with versioning and complete history.</p>"
+    },
+    {
+      "widget_id": "cpiqf3r4",
+      "type": "heading",
+      "field": "title",
+      "fr": "◆",
+      "en": "◆"
+    },
+    {
+      "widget_id": "4r6uijfe",
+      "type": "heading",
+      "field": "title",
+      "fr": "Capitalisation",
+      "en": "Knowledge capitalization"
+    },
+    {
+      "widget_id": "yakv4jyp",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Vos savoir-faire industriels documentés, transmissibles et exploitables sur les projets futurs.</p>",
+      "en": "<p>Your industrial know-how documented, transferable, and reusable across future projects.</p>"
+    },
+    {
+      "widget_id": "44xvy8i7",
+      "type": "heading",
+      "field": "title",
+      "fr": "◆",
+      "en": "◆"
+    },
+    {
+      "widget_id": "2b1gy34r",
+      "type": "heading",
+      "field": "title",
+      "fr": "Collaboration",
+      "en": "Collaboration"
+    },
+    {
+      "widget_id": "v4yaovrk",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Bureau d'études, atelier, achats : tout le monde travaille sur la bonne version au bon moment.</p>",
+      "en": "<p>Engineering, workshop, purchasing: everyone works on the right version at the right time.</p>"
+    },
+    {
+      "widget_id": "fq6b3bb6",
+      "type": "heading",
+      "field": "title",
+      "fr": "◆",
+      "en": "◆"
+    },
+    {
+      "widget_id": "ffzeggtt",
+      "type": "heading",
+      "field": "title",
+      "fr": "Sécurité",
+      "en": "Security"
+    },
+    {
+      "widget_id": "1nwbk8ci",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Sauvegardes automatiques, contrôle des accès et conformité industrielle assurés par défaut.</p>",
+      "en": "<p>Automatic backups, access control, and industrial compliance enforced by default.</p>"
+    },
+    {
+      "widget_id": "x3ufjm8p",
+      "type": "heading",
+      "field": "title",
+      "fr": "◆",
+      "en": "◆"
+    },
+    {
+      "widget_id": "nizvciyv",
+      "type": "heading",
+      "field": "title",
+      "fr": "Croissance",
+      "en": "Growth"
+    },
+    {
+      "widget_id": "yhruhaop",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Standardisation de vos processus pour scaler la production sans perte de qualité.</p>",
+      "en": "<p>Standardize your processes to scale production without sacrificing quality.</p>"
+    },
+    {
+      "widget_id": "n0idugy0",
+      "type": "heading",
+      "field": "title",
+      "fr": "",
+      "en": ""
+    },
+    {
+      "widget_id": "qacevt17",
+      "type": "button",
+      "field": "text",
+      "fr": "",
+      "en": ""
+    },
+    {
+      "widget_id": "iv0172d8",
+      "type": "heading",
+      "field": "title",
+      "fr": "Nos <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">solutions</em> pour l'industrie manufacturière",
+      "en": "Our <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">solutions</em> for the manufacturing industry"
+    },
+    {
+      "widget_id": "gve6ltdb",
+      "type": "heading",
+      "field": "title",
+      "fr": "CAO 3D",
+      "en": "3D CAD"
+    },
+    {
+      "widget_id": "w7b3nqo2",
+      "type": "heading",
+      "field": "title",
+      "fr": "01",
+      "en": "01"
+    },
+    {
+      "widget_id": "jvm499uy",
+      "type": "heading",
+      "field": "title",
+      "fr": "SolidWorks Design",
+      "en": "SolidWorks Design"
+    },
+    {
+      "widget_id": "qoyjfe9m",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>L'environnement de référence en CAO mécanique : pièces, assemblages, mises en plan pour vos équipes BE.</p>",
+      "en": "<p>The reference environment for mechanical CAD: parts, assemblies, and drawings for your engineering teams.</p>"
+    },
+    {
+      "widget_id": "ipfkimcc",
+      "type": "icon-list",
+      "field": "icon_list[0].text",
+      "fr": "Modélisation paramétrique",
+      "en": "Parametric modeling"
+    },
+    {
+      "widget_id": "ipfkimcc",
+      "type": "icon-list",
+      "field": "icon_list[1].text",
+      "fr": "Tôlerie & soudure",
+      "en": "Sheet metal & welding"
+    },
+    {
+      "widget_id": "ipfkimcc",
+      "type": "icon-list",
+      "field": "icon_list[2].text",
+      "fr": "Rendu photoréaliste",
+      "en": "Photorealistic rendering"
+    },
+    {
+      "widget_id": "xa6zlm3o",
+      "type": "button",
+      "field": "text",
+      "fr": "",
+      "en": ""
+    },
+    {
+      "widget_id": "2zfcb0zi",
+      "type": "heading",
+      "field": "title",
+      "fr": "PDM/PLM",
+      "en": "PDM/PLM"
+    },
+    {
+      "widget_id": "x3c51kcm",
+      "type": "heading",
+      "field": "title",
+      "fr": "02",
+      "en": "02"
+    },
+    {
+      "widget_id": "h9s7zdvf",
+      "type": "heading",
+      "field": "title",
+      "fr": "3DEXPERIENCE PDM",
+      "en": "3DEXPERIENCE PDM"
+    },
+    {
+      "widget_id": "0nw3u8m2",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Centralisez vos données techniques, gérez les versions et collaborez en temps réel sur le cloud — sans serveur local.</p>",
+      "en": "<p>Centralize your technical data, manage versions, and collaborate in real time on the cloud — no local server required.</p>"
+    },
+    {
+      "widget_id": "mce26c1x",
+      "type": "icon-list",
+      "field": "icon_list[0].text",
+      "fr": "Cloud sécurisé",
+      "en": "Secure cloud"
+    },
+    {
+      "widget_id": "mce26c1x",
+      "type": "icon-list",
+      "field": "icon_list[1].text",
+      "fr": "Workflow & approbation",
+      "en": "Workflow & approval"
+    },
+    {
+      "widget_id": "mce26c1x",
+      "type": "icon-list",
+      "field": "icon_list[2].text",
+      "fr": "Collaboration temps réel",
+      "en": "Real-time collaboration"
+    },
+    {
+      "widget_id": "g951hy0e",
+      "type": "button",
+      "field": "text",
+      "fr": "",
+      "en": ""
+    },
+    {
+      "widget_id": "85t2xhdo",
+      "type": "heading",
+      "field": "title",
+      "fr": "BUREAUTIQUE",
+      "en": "OFFICE"
+    },
+    {
+      "widget_id": "v8nwm3l3",
+      "type": "heading",
+      "field": "title",
+      "fr": "03",
+      "en": "03"
+    },
+    {
+      "widget_id": "vq0jx5bo",
+      "type": "heading",
+      "field": "title",
+      "fr": "Microsoft 365",
+      "en": "Microsoft 365"
+    },
+    {
+      "widget_id": "fcmugs9e",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Suite bureautique professionnelle à conditions optimisées pour les entreprises manufacturières.</p>",
+      "en": "<p>Professional office suite at optimized terms for manufacturing companies.</p>"
+    },
+    {
+      "widget_id": "cew8em8j",
+      "type": "icon-list",
+      "field": "icon_list[0].text",
+      "fr": "Teams & SharePoint",
+      "en": "Teams & SharePoint"
+    },
+    {
+      "widget_id": "cew8em8j",
+      "type": "icon-list",
+      "field": "icon_list[1].text",
+      "fr": "Sécurité avancée",
+      "en": "Advanced security"
+    },
+    {
+      "widget_id": "cew8em8j",
+      "type": "icon-list",
+      "field": "icon_list[2].text",
+      "fr": "Licences à prix négociés",
+      "en": "Negotiated licensing pricing"
+    },
+    {
+      "widget_id": "yzo927on",
+      "type": "button",
+      "field": "text",
+      "fr": "",
+      "en": ""
+    }
+  ]
+}
