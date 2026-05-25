@@ -1,0 +1,16 @@
+{
+  "fr_slug": "blogue",
+  "fr_page_id": 1531,
+  "fr_title": "Blogue",
+  "fr_link": "https://stagging.kotonavision.com/blogue/",
+  "extracted_at": "2026-05-25T12:18:38.994Z",
+  "_translation_notes": "Blog hub. Page courte (header + intro + liste articles auto).",
+  "strings": [
+    { "widget_id": "bw3bbmln", "type": "html", "field": "html", "fr": "<div class=\"kv-eyebrow\"><span class=\"kv-eyebrow-bar\"></span>BLOGUE · ACTUALITÉS</div>", "en": "<div class=\"kv-eyebrow\"><span class=\"kv-eyebrow-bar\"></span>BLOG · NEWS</div>" },
+    { "widget_id": "193ciz8p", "type": "heading", "field": "title", "fr": "Notre <em>actualité</em> et études de cas.", "en": "Our <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">news</em> and case studies." },
+    { "widget_id": "1rrxaanv", "type": "text-editor", "field": "editor", "fr": "<p>Retours d'expérience, conseils techniques et études de cas autour de SolidWorks, 3DEXPERIENCE et la transformation digitale industrielle.</p>", "en": "<p>Field stories, technical tips, and case studies on SolidWorks, 3DEXPERIENCE, and industrial digital transformation.</p>" },
+    { "widget_id": "i3jgh8q8", "type": "html", "field": "html", "fr": "", "en": "" },
+    { "widget_id": "lkfekexu", "type": "button", "field": "text", "fr": "", "en": "" },
+    { "widget_id": "az046o00", "type": "button", "field": "text", "fr": "", "en": "" }
+  ]
+}
