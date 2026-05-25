@@ -1,0 +1,41 @@
+{
+  "_description": "Spec pour répliquer le footer FR #23 → EN #1376. Structure = FR pure (option A). Traductions + URL mapping FR→EN.",
+  "_strategy": "Option A : on prend le footer FR à 100%, on traduit les libellés, on adapte les URLs vers les pages EN équivalentes.",
+  "url_map": {
+    "/revendeur-solidworks-canada/": "/en/solidworks-reseller/",
+    "/solidworks-simulation/": "/en/simulation/",
+    "/3dexperience-pdm-cloud/": "/en/3dexperience-pdm-plm/",
+    "/mise-a-jour-solidworks/": "/en/solidworks-upgrade-3dex-offer/",
+    "/solidworks-gratuit-startup-canada/": "/en/free-solidworks-startups-canada/",
+    "/manufacturier/": "/en/manufacturing/",
+    "/services-professionnels/": "/en/professional-services/",
+    "/support-3dexperience/": "/en/3dexperience-support/",
+    "/formation-solidworks/": "/en/solidworks-training/",
+    "/services-solidworks-prestation-sur-mesure/": "/en/custom-service-solidworks/",
+    "/nous-contacter/": "/en/contact-us/",
+    "/confidentialite/": "/en/privacy-policy/"
+  },
+  "text_map": {
+    "SOLIDWORKS": "SOLIDWORKS",
+    "Pour qui ?": "For whom?",
+    "Accompagnement et Formation": "Support & Training",
+    "Création par <b>Vesta-digital</b>": "Created by <b>Vesta-digital</b>",
+    "Design": "Design",
+    "Simulation": "Simulation",
+    "3DEXPERIENCE": "3DEXPERIENCE",
+    "Mettre à jour sa licence": "Upgrade your license",
+    "Programme Startups": "Startup program",
+    "Programme start-ups": "Startup program",
+    "Entreprises industrielles": "Industrial companies",
+    "Travailleurs autonomes": "Freelancers",
+    "Accompagnement complet": "Full support",
+    "Formation SOLIDWORKS": "SOLIDWORKS Training",
+    "Sur mesure": "Custom service"
+  },
+  "html_replacements": [
+    {
+      "fr": "<a href=\"/confidentialite/\">Confidentialité</a>",
+      "en": "<a href=\"/en/privacy-policy/\">Privacy Policy</a>"
+    }
+  ]
+}

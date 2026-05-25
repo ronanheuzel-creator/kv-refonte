@@ -1,0 +1,458 @@
+{
+  "fr_slug": "services-professionnels",
+  "fr_page_id": 774,
+  "fr_title": "Services professionnels",
+  "fr_link": "https://stagging.kotonavision.com/services-professionnels/",
+  "extracted_at": "2026-05-24T20:29:46.976Z",
+  "_translation_notes": "Traduit par Claude. Réutilise les patterns de manufacturier (BENEFITS, Centralization, Capitalization, ...). Section Microsoft 365 conservée (à confirmer avec client).",
+  "strings": [
+    {
+      "widget_id": "6zmhmj1d",
+      "type": "html",
+      "field": "html",
+      "fr": "<div class=\"kv-eyebrow\"><span class=\"kv-eyebrow-bar\"></span>SECTEUR · SERVICES PROFESSIONNELS</div>",
+      "en": "<div class=\"kv-eyebrow\"><span class=\"kv-eyebrow-bar\"></span>SECTOR · PROFESSIONAL SERVICES</div>"
+    },
+    {
+      "widget_id": "gy5p9hx4",
+      "type": "heading",
+      "field": "title",
+      "fr": "Optimiser vos <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">opérations</em> de services professionnels.",
+      "en": "Optimize your professional services <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">operations</em>."
+    },
+    {
+      "widget_id": "jc3y9v2l",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Au cœur d'un cabinet performant se trouvent une gestion fluide de l'information, une coordination efficace et une sécurité sans faille des données clients. Nous vous aidons à mettre en place les outils adaptés.</p>",
+      "en": "<p>At the heart of a high-performing firm lie seamless information management, efficient coordination, and rock-solid client data security. We help you put the right tools in place.</p>"
+    },
+    {
+      "widget_id": "t7i5nuyi",
+      "type": "html",
+      "field": "html",
+      "fr": "<span class=\"kv-badge\">◆ Outils de collaboration & design</span>",
+      "en": "<span class=\"kv-badge\">◆ Collaboration & design tools</span>"
+    },
+    {
+      "widget_id": "ukp5lhbh",
+      "type": "button",
+      "field": "text",
+      "fr": "Voir nos solutions",
+      "en": "View our solutions"
+    },
+    {
+      "widget_id": "g4tgdjsf",
+      "type": "button",
+      "field": "text",
+      "fr": "Nous contacter",
+      "en": "Contact us"
+    },
+    {
+      "widget_id": "8edunvc9",
+      "type": "heading",
+      "field": "title",
+      "fr": "Vos défis <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">quotidiens</em>",
+      "en": "Your daily <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">challenges</em>"
+    },
+    {
+      "widget_id": "xz5nkcps",
+      "type": "heading",
+      "field": "title",
+      "fr": "Informations clients dispersées",
+      "en": "Scattered client information"
+    },
+    {
+      "widget_id": "uha6iv07",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Les données sont éparpillées entre fichiers locaux, courriels et outils non connectés, rendant leur centralisation difficile.</p>",
+      "en": "<p>Data is scattered across local files, emails, and disconnected tools, making centralization difficult.</p>"
+    },
+    {
+      "widget_id": "2fpredfo",
+      "type": "heading",
+      "field": "title",
+      "fr": "Sécurité & confidentialité",
+      "en": "Security & confidentiality"
+    },
+    {
+      "widget_id": "qmghimxa",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Partage non contrôlé de fichiers sensibles, mots de passe faibles, accès mal cadrés : vos données clients sont exposées.</p>",
+      "en": "<p>Uncontrolled sharing of sensitive files, weak passwords, poorly scoped access: your client data is exposed.</p>"
+    },
+    {
+      "widget_id": "lc4fmjtn",
+      "type": "heading",
+      "field": "title",
+      "fr": "Suivi projet & livrables",
+      "en": "Project & deliverables tracking"
+    },
+    {
+      "widget_id": "phcejxl4",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Sans outil structurant, les échéances, les statuts et les versions de documents deviennent opaques.</p>",
+      "en": "<p>Without a structuring tool, deadlines, statuses, and document versions become opaque.</p>"
+    },
+    {
+      "widget_id": "vvs8gcgk",
+      "type": "heading",
+      "field": "title",
+      "fr": "Collaboration interdisciplinaire",
+      "en": "Cross-team collaboration"
+    },
+    {
+      "widget_id": "l1b8wxs6",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Les échanges entre équipes (ingénierie, gestion, commercial) souffrent de silos et de doublons.</p>",
+      "en": "<p>Exchanges between teams (engineering, management, sales) suffer from silos and duplication.</p>"
+    },
+    {
+      "widget_id": "buluo2za",
+      "type": "heading",
+      "field": "title",
+      "fr": "Capitalisation du savoir",
+      "en": "Knowledge capitalization"
+    },
+    {
+      "widget_id": "k8v4amb0",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Le savoir-faire reste dans la tête de quelques experts et se perd à chaque départ ou réorganisation.</p>",
+      "en": "<p>Know-how stays in the heads of a few experts and is lost with every departure or reorganization.</p>"
+    },
+    {
+      "widget_id": "8gctc4si",
+      "type": "heading",
+      "field": "title",
+      "fr": "Conformité réglementaire",
+      "en": "Regulatory compliance"
+    },
+    {
+      "widget_id": "aau4ro2q",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Traçabilité, archivage légal, RGPD : sans cadre clair, le risque de non-conformité grimpe.</p>",
+      "en": "<p>Traceability, legal archiving, GDPR: without a clear framework, the risk of non-compliance climbs.</p>"
+    },
+    {
+      "widget_id": "3he90g0g",
+      "type": "heading",
+      "field": "title",
+      "fr": "BÉNÉFICES",
+      "en": "BENEFITS"
+    },
+    {
+      "widget_id": "qtxbzwg3",
+      "type": "heading",
+      "field": "title",
+      "fr": "Ce que vous gagnez <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">concrètement</em>",
+      "en": "What you gain <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">concretely</em>"
+    },
+    {
+      "widget_id": "ck8i8v06",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Une approche structurée pour sécuriser vos données et fluidifier la collaboration de votre cabinet.</p>",
+      "en": "<p>A structured approach to secure your data and streamline collaboration in your firm.</p>"
+    },
+    {
+      "widget_id": "wulwicd9",
+      "type": "heading",
+      "field": "title",
+      "fr": "◆",
+      "en": "◆"
+    },
+    {
+      "widget_id": "yl3erm6l",
+      "type": "heading",
+      "field": "title",
+      "fr": "Centralisation",
+      "en": "Centralization"
+    },
+    {
+      "widget_id": "va8utfd0",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Toutes vos données techniques et clients accessibles depuis un point unique, avec versioning complet.</p>",
+      "en": "<p>All your technical and client data accessible from a single point, with complete versioning.</p>"
+    },
+    {
+      "widget_id": "fbk73ibq",
+      "type": "heading",
+      "field": "title",
+      "fr": "◆",
+      "en": "◆"
+    },
+    {
+      "widget_id": "hfa9ww96",
+      "type": "heading",
+      "field": "title",
+      "fr": "Capitalisation",
+      "en": "Knowledge capitalization"
+    },
+    {
+      "widget_id": "w845k9g5",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Vos méthodes et savoir-faire documentés, transmissibles et exploitables sur les projets futurs.</p>",
+      "en": "<p>Your methods and know-how documented, transferable, and reusable across future projects.</p>"
+    },
+    {
+      "widget_id": "o1gx4sua",
+      "type": "heading",
+      "field": "title",
+      "fr": "◆",
+      "en": "◆"
+    },
+    {
+      "widget_id": "8nmmfom5",
+      "type": "heading",
+      "field": "title",
+      "fr": "Collaboration",
+      "en": "Collaboration"
+    },
+    {
+      "widget_id": "87r6ukft",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Ingénierie, gestion, commercial : tout le monde travaille sur la bonne version au bon moment.</p>",
+      "en": "<p>Engineering, management, sales: everyone works on the right version at the right time.</p>"
+    },
+    {
+      "widget_id": "w55mf69v",
+      "type": "heading",
+      "field": "title",
+      "fr": "◆",
+      "en": "◆"
+    },
+    {
+      "widget_id": "llsi0nxc",
+      "type": "heading",
+      "field": "title",
+      "fr": "Sécurité",
+      "en": "Security"
+    },
+    {
+      "widget_id": "hbhsdtfx",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Sauvegardes automatiques, contrôle des accès et conformité (RGPD, archivage légal) assurés par défaut.</p>",
+      "en": "<p>Automatic backups, access control, and compliance (GDPR, legal archiving) enforced by default.</p>"
+    },
+    {
+      "widget_id": "2p4q7zl7",
+      "type": "heading",
+      "field": "title",
+      "fr": "◆",
+      "en": "◆"
+    },
+    {
+      "widget_id": "qy69x5fw",
+      "type": "heading",
+      "field": "title",
+      "fr": "Croissance",
+      "en": "Growth"
+    },
+    {
+      "widget_id": "eae1geg1",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Standardisation de vos processus pour grandir sans perte de qualité ni de sécurité.</p>",
+      "en": "<p>Standardize your processes to grow without sacrificing quality or security.</p>"
+    },
+    {
+      "widget_id": "v341fz3t",
+      "type": "heading",
+      "field": "title",
+      "fr": "",
+      "en": ""
+    },
+    {
+      "widget_id": "dojqcaxa",
+      "type": "button",
+      "field": "text",
+      "fr": "",
+      "en": ""
+    },
+    {
+      "widget_id": "hx4oa2gi",
+      "type": "heading",
+      "field": "title",
+      "fr": "Nos <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">solutions</em> pour les services professionnels",
+      "en": "Our <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">solutions</em> for professional services"
+    },
+    {
+      "widget_id": "yxd1u0ad",
+      "type": "heading",
+      "field": "title",
+      "fr": "CAO 3D",
+      "en": "3D CAD"
+    },
+    {
+      "widget_id": "zq0iqbxn",
+      "type": "heading",
+      "field": "title",
+      "fr": "01",
+      "en": "01"
+    },
+    {
+      "widget_id": "no0j5eni",
+      "type": "heading",
+      "field": "title",
+      "fr": "SolidWorks Design",
+      "en": "SolidWorks Design"
+    },
+    {
+      "widget_id": "tyabnx7o",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>L'environnement de référence en CAO mécanique pour vos équipes techniques et d'ingénierie.</p>",
+      "en": "<p>The reference environment for mechanical CAD for your technical and engineering teams.</p>"
+    },
+    {
+      "widget_id": "z6sb7at9",
+      "type": "icon-list",
+      "field": "icon_list[0].text",
+      "fr": "Modélisation paramétrique",
+      "en": "Parametric modeling"
+    },
+    {
+      "widget_id": "z6sb7at9",
+      "type": "icon-list",
+      "field": "icon_list[1].text",
+      "fr": "Mise en plan",
+      "en": "Drafting & drawings"
+    },
+    {
+      "widget_id": "z6sb7at9",
+      "type": "icon-list",
+      "field": "icon_list[2].text",
+      "fr": "Rendu photoréaliste",
+      "en": "Photorealistic rendering"
+    },
+    {
+      "widget_id": "8v0y56a5",
+      "type": "button",
+      "field": "text",
+      "fr": "",
+      "en": ""
+    },
+    {
+      "widget_id": "4013vmsa",
+      "type": "heading",
+      "field": "title",
+      "fr": "PDM/PLM",
+      "en": "PDM/PLM"
+    },
+    {
+      "widget_id": "q3xljusa",
+      "type": "heading",
+      "field": "title",
+      "fr": "02",
+      "en": "02"
+    },
+    {
+      "widget_id": "s0b0jv0d",
+      "type": "heading",
+      "field": "title",
+      "fr": "3DEXPERIENCE PDM",
+      "en": "3DEXPERIENCE PDM"
+    },
+    {
+      "widget_id": "lcizgy19",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Centralisez vos données techniques et clients, gérez les versions et collaborez en temps réel sur le cloud.</p>",
+      "en": "<p>Centralize your technical and client data, manage versions, and collaborate in real time on the cloud.</p>"
+    },
+    {
+      "widget_id": "f7z61h0v",
+      "type": "icon-list",
+      "field": "icon_list[0].text",
+      "fr": "Cloud sécurisé",
+      "en": "Secure cloud"
+    },
+    {
+      "widget_id": "f7z61h0v",
+      "type": "icon-list",
+      "field": "icon_list[1].text",
+      "fr": "Workflow & approbation",
+      "en": "Workflow & approval"
+    },
+    {
+      "widget_id": "f7z61h0v",
+      "type": "icon-list",
+      "field": "icon_list[2].text",
+      "fr": "Collaboration temps réel",
+      "en": "Real-time collaboration"
+    },
+    {
+      "widget_id": "543tvz88",
+      "type": "button",
+      "field": "text",
+      "fr": "",
+      "en": ""
+    },
+    {
+      "widget_id": "1infvl2x",
+      "type": "heading",
+      "field": "title",
+      "fr": "BUREAUTIQUE",
+      "en": "OFFICE"
+    },
+    {
+      "widget_id": "lbv2b3nq",
+      "type": "heading",
+      "field": "title",
+      "fr": "03",
+      "en": "03"
+    },
+    {
+      "widget_id": "fvtj8cb3",
+      "type": "heading",
+      "field": "title",
+      "fr": "Microsoft 365",
+      "en": "Microsoft 365"
+    },
+    {
+      "widget_id": "ti5xu7ts",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Suite bureautique professionnelle à conditions optimisées pour les cabinets de services.</p>",
+      "en": "<p>Professional office suite at optimized terms for service firms.</p>"
+    },
+    {
+      "widget_id": "q879zlg4",
+      "type": "icon-list",
+      "field": "icon_list[0].text",
+      "fr": "Teams & SharePoint",
+      "en": "Teams & SharePoint"
+    },
+    {
+      "widget_id": "q879zlg4",
+      "type": "icon-list",
+      "field": "icon_list[1].text",
+      "fr": "Sécurité avancée",
+      "en": "Advanced security"
+    },
+    {
+      "widget_id": "q879zlg4",
+      "type": "icon-list",
+      "field": "icon_list[2].text",
+      "fr": "Licences à prix négociés",
+      "en": "Negotiated licensing pricing"
+    },
+    {
+      "widget_id": "z1o8jdav",
+      "type": "button",
+      "field": "text",
+      "fr": "",
+      "en": ""
+    }
+  ]
+}
