@@ -1,0 +1,185 @@
+{
+  "fr_slug": "formation-solidworks",
+  "fr_page_id": 59,
+  "fr_title": "Formation SolidWorks",
+  "fr_link": "https://stagging.kotonavision.com/formation-solidworks/",
+  "extracted_at": "2026-05-25T09:10:12.532Z",
+  "_translation_notes": "Traduit par Claude. HTML/Fraunces préservés.",
+  "strings": [
+    {
+      "widget_id": "5roiuovp",
+      "type": "html",
+      "field": "html",
+      "fr": "<div class=\"kv-eyebrow\"><span class=\"kv-eyebrow-bar\"></span>FORMATION · SOLIDWORKS</div>",
+      "en": "<div class=\"kv-eyebrow\"><span class=\"kv-eyebrow-bar\"></span>TRAINING · SOLIDWORKS</div>"
+    },
+    {
+      "widget_id": "p8z7zaah",
+      "type": "heading",
+      "field": "title",
+      "fr": "Utilisez SolidWorks à sa <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">pleine capacité</em>.",
+      "en": "Use SolidWorks to its <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">full potential</em>."
+    },
+    {
+      "widget_id": "afzaqswl",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>La majorité des utilisateurs de SolidWorks n'exploitent que 10 à 20 % de ses capacités. Nos formations adaptées aux PME vous permettent de combler cet écart et de transformer votre investissement logiciel en avantage compétitif.</p>",
+      "en": "<p>Most SolidWorks users only tap into 10 to 20% of its capabilities. Our training programs designed for SMEs help you close that gap and turn your software investment into a competitive advantage.</p>"
+    },
+    {
+      "widget_id": "pee8ghs3",
+      "type": "html",
+      "field": "html",
+      "fr": "<span class=\"kv-badge\">◆ Formations adaptées aux PME</span>",
+      "en": "<span class=\"kv-badge\">◆ Training programs designed for SMEs</span>"
+    },
+    {
+      "widget_id": "d68qomdd",
+      "type": "button",
+      "field": "text",
+      "fr": "Voir les formations",
+      "en": "View our training programs"
+    },
+    {
+      "widget_id": "etiacibc",
+      "type": "button",
+      "field": "text",
+      "fr": "Nous contacter",
+      "en": "Contact us"
+    },
+    {
+      "widget_id": "lj8ji77p",
+      "type": "heading",
+      "field": "title",
+      "fr": "Nos <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">formations</em>",
+      "en": "Our <em style=\"font-family:Fraunces,serif;font-style:italic;color:#C9A35C;font-weight:600\">training programs</em>"
+    },
+    {
+      "widget_id": "4zq7oh91",
+      "type": "heading",
+      "field": "title",
+      "fr": "Maîtrise des bases",
+      "en": "Mastering the basics"
+    },
+    {
+      "widget_id": "hk423u3w",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Interface, modélisation paramétrique, esquisses, fonctions de base : démarrez sur des fondations solides.</p>",
+      "en": "<p>Interface, parametric modeling, sketches, base features: start from solid foundations.</p>"
+    },
+    {
+      "widget_id": "8qyxh5ek",
+      "type": "heading",
+      "field": "title",
+      "fr": "Tôlerie",
+      "en": "Sheet metal"
+    },
+    {
+      "widget_id": "jcmplocv",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Conception de pièces en tôle pliée, mise à plat, configurations métier pour la fabrication.</p>",
+      "en": "<p>Design of folded sheet metal parts, flat patterns, industry-ready configurations for manufacturing.</p>"
+    },
+    {
+      "widget_id": "j0kt5med",
+      "type": "heading",
+      "field": "title",
+      "fr": "Constructions soudées",
+      "en": "Welded structures"
+    },
+    {
+      "widget_id": "ido9heoq",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Profils, structures, listes de débit : maîtrisez la conception de pièces soudées en SolidWorks.</p>",
+      "en": "<p>Profiles, structures, cut lists: master the design of welded parts in SolidWorks.</p>"
+    },
+    {
+      "widget_id": "zvze6jkg",
+      "type": "heading",
+      "field": "title",
+      "fr": "Mise en plan",
+      "en": "Drafting & drawings"
+    },
+    {
+      "widget_id": "2sybbzgc",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Vues, cotation, nomenclatures, exportation PDF/DWG : produisez des plans techniques prêts pour l'atelier.</p>",
+      "en": "<p>Views, dimensioning, BOMs, PDF/DWG export: produce shop-ready technical drawings.</p>"
+    },
+    {
+      "widget_id": "jvjgsjyp",
+      "type": "heading",
+      "field": "title",
+      "fr": "Surfaces",
+      "en": "Surfaces"
+    },
+    {
+      "widget_id": "l5i42n37",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Modélisation surfacique avancée pour les pièces aux géométries complexes : carrosserie, design produit.</p>",
+      "en": "<p>Advanced surface modeling for parts with complex geometry: bodywork, product design.</p>"
+    },
+    {
+      "widget_id": "zmdvyjq9",
+      "type": "heading",
+      "field": "title",
+      "fr": "Simulation",
+      "en": "Simulation"
+    },
+    {
+      "widget_id": "8z5ry9xh",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Analyse par éléments finis (FEA) : validez vos conceptions avant la première pièce usinée.</p>",
+      "en": "<p>Finite Element Analysis (FEA): validate your designs before the first machined part.</p>"
+    },
+    {
+      "widget_id": "w11qc78z",
+      "type": "heading",
+      "field": "title",
+      "fr": "Assemblages avancés",
+      "en": "Advanced assemblies"
+    },
+    {
+      "widget_id": "5rlnxwwy",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Contraintes, gestion des familles de pièces, performance sur assemblages complexes.</p>",
+      "en": "<p>Mates, part family management, performance on complex assemblies.</p>"
+    },
+    {
+      "widget_id": "ak17f7ce",
+      "type": "heading",
+      "field": "title",
+      "fr": "Tuyauterie",
+      "en": "Routing & piping"
+    },
+    {
+      "widget_id": "1ryc7ym7",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Module routing : conception de tuyauterie, câblage, gaines avec gestion automatique des accessoires.</p>",
+      "en": "<p>Routing module: design of piping, wiring, conduits with automatic fittings management.</p>"
+    },
+    {
+      "widget_id": "wljmfljx",
+      "type": "heading",
+      "field": "title",
+      "fr": "Catia 3DX",
+      "en": "Catia 3DX"
+    },
+    {
+      "widget_id": "6iaz3gho",
+      "type": "text-editor",
+      "field": "editor",
+      "fr": "<p>Prise en main de Catia 3DEXPERIENCE pour les équipes amenées à passer à la plateforme cloud Dassault Systèmes.</p>",
+      "en": "<p>Onboarding to Catia 3DEXPERIENCE for teams transitioning to the Dassault Systèmes cloud platform.</p>"
+    }
+  ]
+}
